@@ -1,0 +1,36 @@
+#users{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "u u u";
+}
+
+.user{
+    grid-area: "u";
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5%;
+    background-color: gainsboro;
+    box-shadow: 1px 1px 3px #0a1612;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "n"
+    "e";
+}
+.user:hover{
+    opacity: 80%;
+}
+.name{
+    grid-area: "n";
+    justify-items: center;
+    font-size: large;
+    margin: 5px;
+}
+.email{
+    grid-area: "e";
+    justify-items: center;
+    font-size: medium;
+    text-decoration: underline;
+    color: blue;
+    margin: 5px;
+}
